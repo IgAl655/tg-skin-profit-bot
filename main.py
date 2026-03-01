@@ -159,7 +159,7 @@ async def cancel(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 if __name__ == "__main__":
     # Замените на свой токен:
-    TOKEN = "7498594833:AAHZ1BcxU7F_ZmCSfy_wZBGMZjcDlg45JsE"
+    TOKEN = ""
 
     async def on_startup(app):
         if os.path.exists("restart_flag.txt"):
@@ -205,3 +205,4 @@ if __name__ == "__main__":
     app.add_handler(MessageHandler(filters.TEXT & filters.Regex("^🔄 Перезагрузить бота$"), restart_bot))
 
     app.run_polling()
+
